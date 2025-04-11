@@ -95,7 +95,7 @@ def test_model_accuracy():
     try:
         # Load a small subset of data for testing
         X_train, y_train, X_val, y_val, _, _ = load_mnist_from_csv(
-            "..mnist_train.csv", "./mnist_test.csv", val_split=0.1
+            "./mnist_train.csv", "./mnist_test.csv", val_split=0.1
         )
 
         # Train model with minimal configuration
